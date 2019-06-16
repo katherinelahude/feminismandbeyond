@@ -1,0 +1,494 @@
+@font-face {
+    font-family: 'Apercu Regular';
+    src: url('fonts/apercu_regular_pro.otf');
+  }
+@font-face {
+    font-family: 'Apercu Regular Italic';
+    src: url('fonts/apercu_regular_italic_pro.otf');  
+  }
+@font-face {
+font-family: 'Apercu Medium';
+src: url('fonts/apercu_medium_pro.otf');
+}
+@font-face {
+  font-family: 'Apercu Medium Italic';
+  src: url('fonts/apercu_medium_italic_pro.otf');
+}
+@font-face {
+    font-family: 'Apercu Bold';
+    src: url('fonts/apercu_bold_pro.otf');
+  }
+@font-face {
+    font-family: 'Apercu Bold Italic';
+    src: url('fonts/apercu_bold_italic_pro.otf');
+  }
+  
+
+  * {
+  margin: 0;
+  padding: 0;
+
+
+  }
+
+  body#about {
+      background-color:#353436;
+    }
+
+
+nav {
+  width: 100%;
+  z-index: 9;
+
+}
+nav ul {
+  font-size: 18px;
+  font-family: 'Apercu Bold', sans-serif;
+  text-align: center;
+  display: block;
+  width: 100%;
+
+}
+
+nav li {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: inline-block;
+
+}
+#logo {
+    width: 200px;
+    position: relative;
+    top: 6vh;
+
+}
+
+#logo_home {
+    width: 200px;
+    position: relative;
+    top: 6vh;
+    fill: #4D3793;
+    
+}
+
+#logo_home {
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#logo_home { animation-name: logochange;}
+
+
+
+@keyframes logochange {
+    0% {
+      fill: #094F98;
+    }
+
+    20% {
+        fill: #3D009E;
+      }
+
+    40% {
+
+        fill: #3DB54A;
+    }
+
+    60% {
+
+        fill: #EF4723;
+    }
+
+    100% {
+        fill:#D12027;
+    }
+}
+
+
+#home #texto_menu a:link {
+    text-decoration: none;
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+}
+
+#home #texto_menu a:visited {
+    text-decoration: none;
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+
+}
+
+#home #texto_menu a:hover {
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+    border-bottom: 3px solid currentColor;
+    padding-bottom: 3px;
+}
+
+#home #texto_menu a:active {
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+    text-decoration: none;
+
+}
+
+#print #texto_menu a:link {
+    text-decoration: none;
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+}
+
+#print #texto_menu a:visited {
+    text-decoration: none;
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+
+}
+
+#print #texto_menu a:hover {
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+    border-bottom: 3px solid currentColor;
+    padding-bottom: 3px;
+}
+
+#print  #texto_menu a:active {
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+    text-decoration: none;
+
+}
+
+
+#about #texto_menu a:link {
+    color:#fff !important;
+    text-decoration: none !important;
+}
+
+#about #texto_menu a:visited {
+    color: #fff !important;
+    text-decoration: none !important;
+
+}
+
+#about #texto_menu a:hover {
+    border-bottom: 3px solid currentColor;
+    padding-bottom: 3px;
+}
+
+#about #texto_menu a:active {
+    color: #fff !important;
+    text-decoration: none !important;
+
+}
+
+#about p a:link {
+    color:#fff !important;
+    text-decoration: underline; 
+}
+
+#about p a:visited {
+    color: #fff !important;
+    text-decoration: underline; 
+
+}
+
+#about p a:hover {
+    color: #fff !important;
+    text-decoration: underline; 
+}
+
+#about p a:active {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+#texto_about {
+
+width: 30%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5vh;
+padding: 40px 60px 60px 60px;
+
+}
+
+#about p {
+
+  color: #fff;
+  font-family: 'Apercu Regular', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  text-align: left;
+  margin: 0;
+
+}
+
+#about h1 {
+
+  color: #fff;
+  font-family: 'Apercu Regular', sans-serif;
+  font-size: 2em;
+  line-height: 1.3em;
+  text-align: left;
+  margin: 0;
+
+
+}
+
+
+#container {
+   position: fixed;
+   margin-top: 10vh;
+   height: 60vh;
+   -webkit-mask-box-image:
+   -webkit-linear-gradient(
+   top,transparent, transparent 5%, white 20%, white 80%, transparent 95%)
+}
+
+
+table {
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  width: 45%;
+ 
+
+}
+
+
+td {
+
+    padding: 10px 0px 18px 18px;
+    vertical-align: top;
+
+    
+    }
+
+
+  p {
+
+    color: #4D3793;
+    font-family: 'Apercu Medium', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: left;
+    margin: 0;
+
+    
+    }
+
+    #texto_peq_right {
+
+        color: #4D3793;
+        font-family: 'Apercu Medium', sans-serif;
+        font-size: 0.6em;
+        line-height: 1.2em;
+        text-align: right;
+        margin: 0;
+    
+
+
+    }
+
+    #texto_peq_left {
+
+        color: #4D3793;
+        font-family: 'Apercu Medium', sans-serif;
+        font-size: 0.6em;
+        line-height: 1.2em;
+        text-align: left;
+        margin: 0;
+        display: inline-block
+    
+
+
+    }
+
+    table
+{
+    animation: slide infinite 25s linear;
+    -webkit-animation: slide infinite 25s linear;
+   
+}
+
+table:hover
+{
+    animation-play-state: paused;
+}
+
+
+@keyframes slide {
+    0% {
+      margin-top: 400px;
+
+    }
+    100% {
+      margin-top: -1050px;
+    }
+}
+
+#home p, #texto_peq_right, #texto_peq_left {
+    animation: colorchange infinite 25s linear ;
+    -webkit-animation: colorchange infinite 25s linear;
+
+
+}
+
+@keyframes colorchange {
+    0% {
+      color: #094F98;
+    }
+
+    20% {
+        color: #3D009E;
+      }
+
+    40% {
+
+        color: #3DB54A;
+    }
+
+    60% {
+
+        color: #EF4723;
+    }
+
+    100% {
+      color:#D12027;
+    }
+}
+
+#book {
+
+    width: 10px;
+    margin-right: 5px;
+    position: relative;
+    fill: #4D3793;
+
+}
+
+#tweet {
+        width: 10px;
+        margin-right: 5px;
+        position: relative;
+        fill: #4D3793;
+    }
+
+    #tweet {
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      
+      #tweet { animation-name: iconchange;}    
+    
+
+#book {
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  #book { animation-name: iconchange;}
+  
+  
+  
+  @keyframes iconchange {
+      0% {
+        fill: #094F98;
+      }
+  
+      20% {
+          fill: #3D009E;
+        }
+  
+      40% {
+  
+          fill: #3DB54A;
+      }
+  
+      60% {
+  
+          fill: #EF4723;
+      }
+  
+      100% {
+          fill:#D12027;
+      }
+  }
+
+#zines {
+    width:100%;
+    text-align:center;
+    margin-top: 20vh;
+
+
+         
+}
+
+#access {
+    display: inline-block;
+      width: 12vw;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+
+
+  #movement {
+    display: inline-block;
+    width: 12vw;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  #economy {
+    display: inline-block;
+    width: 12vw;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+
+  #expression {
+    display: inline-block;
+    width: 12vw;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+
+  #embodiment {
+    display: inline-block;
+    width: 12vw;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+
+#access:hover {
+    content: url('images/access_zine_hover.png');
+
+}
+
+#movement:hover {
+    content: url('images/movement_zine_hover.png');
+
+}
+
+#economy:hover {
+    content: url('images/economy_zine_hover.png');
+
+}
+#expression:hover {
+    content: url('images/expression_zine_hover.png');
+
+}
+#embodiment:hover {
+    content: url('images/embodiment_zine_hover.png');
+
+}
