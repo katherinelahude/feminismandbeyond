@@ -38,7 +38,7 @@ src: url('fonts/apercu_medium_pro.otf');
 
 nav {
   width: 100%;
-  z-index: 9;
+  z-index: 99999;
 
 }
 nav ul {
@@ -56,14 +56,14 @@ nav li {
     display: inline-block;
 
 }
-#logo {
+#logo_about {
     width: 200px;
     position: relative;
     top: 6vh;
 
 }
 
-#logo_home {
+#logo {
     width: 200px;
     position: relative;
     top: 6vh;
@@ -71,17 +71,50 @@ nav li {
     
 }
 
-#logo_home {
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+#logo {
+    animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    
 }
 
-#logo_home { animation-name: logochange;}
+#logo  { animation-name: iconchange;}
+    
 
 
+#logo a:link {
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      
+#logo a:link { animation-name: iconchange;}   
 
-@keyframes logochange {
+#logo a:visited {
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+#logo a:visited { animation-name: iconchange;}
+
+#logo a:hover {
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+#logo a:hover { animation-name: iconchange;} 
+
+#logo a:active {
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+#logo a:active { animation-name: iconchange;} 
+
+@keyframes iconchange {
     0% {
       fill: #094F98;
     }
@@ -105,6 +138,29 @@ nav li {
     }
 }
 
+@-webkit-keyframes iconchange {
+  0% {
+    fill: #094F98;
+  }
+
+  20% {
+      fill: #3D009E;
+    }
+
+  40% {
+
+      fill: #3DB54A;
+  }
+
+  60% {
+
+      fill: #EF4723;
+  }
+
+  100% {
+      fill:#D12027;
+  }
+}
 
 #home #texto_menu a:link {
     text-decoration: none;
@@ -120,16 +176,16 @@ nav li {
 }
 
 #home #texto_menu a:hover {
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
     animation: colorchange infinite 25s linear ;
     -webkit-animation: colorchange infinite 25s linear;
-    border-bottom: 3px solid currentColor;
-    padding-bottom: 3px;
 }
 
 #home #texto_menu a:active {
+    text-decoration: none;
     animation: colorchange infinite 25s linear ;
     -webkit-animation: colorchange infinite 25s linear;
-    text-decoration: none;
 
 }
 
@@ -147,16 +203,17 @@ nav li {
 }
 
 #print #texto_menu a:hover {
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
     animation: colorchange infinite 25s linear ;
     -webkit-animation: colorchange infinite 25s linear;
-    border-bottom: 3px solid currentColor;
-    padding-bottom: 3px;
+   
 }
 
 #print  #texto_menu a:active {
+    text-decoration: none;
     animation: colorchange infinite 25s linear ;
     -webkit-animation: colorchange infinite 25s linear;
-    text-decoration: none;
 
 }
 
@@ -318,10 +375,22 @@ td {
 table:hover
 {
     animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+
 }
 
 
 @keyframes slide {
+    0% {
+      margin-top: 400px;
+
+    }
+    100% {
+      margin-top: -1050px;
+    }
+}
+
+@-webkit-keyframes slide {
     0% {
       margin-top: 400px;
 
@@ -362,41 +431,57 @@ table:hover
     }
 }
 
-#book {
+@-webkit-keyframes colorchange {
+    0% {
+      color: #094F98;
+    }
+
+    20% {
+        color: #3D009E;
+      }
+
+    40% {
+
+        color: #3DB54A;
+    }
+
+    60% {
+
+        color: #EF4723;
+    }
+
+    100% {
+      color:#D12027;
+    }
+}
+
+#book, #tweet { 
 
     width: 10px;
     margin-right: 5px;
     position: relative;
     fill: #4D3793;
 
+
 }
 
-#tweet {
-        width: 10px;
-        margin-right: 5px;
-        position: relative;
-        fill: #4D3793;
-    }
 
-    #tweet {
+
+
+#book, #tweet {
         animation-duration: 25s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
       
-      #tweet { animation-name: iconchange;}    
+#book, #tweet { animation-name: iconchange;}    
     
 
-#book {
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  
-  #book { animation-name: iconchange;}
-  
-  
-  
+
+
+
+    
+   
   @keyframes iconchange {
       0% {
         fill: #094F98;
@@ -421,12 +506,34 @@ table:hover
       }
   }
 
+  @-webkit-keyframes iconchange {
+    0% {
+      fill: #094F98;
+    }
+
+    20% {
+        fill: #3D009E;
+      }
+
+    40% {
+
+        fill: #3DB54A;
+    }
+
+    60% {
+
+        fill: #EF4723;
+    }
+
+    100% {
+        fill:#D12027;
+    }
+}
+
 #zines {
     width:100%;
     text-align:center;
     margin-top: 20vh;
-
-
          
 }
 
